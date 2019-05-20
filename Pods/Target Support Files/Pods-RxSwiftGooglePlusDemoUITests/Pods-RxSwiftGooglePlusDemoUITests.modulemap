@@ -1,0 +1,6 @@
+framework module Pods_RxSwiftGooglePlusDemoUITests {
+  umbrella header "Pods-RxSwiftGooglePlusDemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

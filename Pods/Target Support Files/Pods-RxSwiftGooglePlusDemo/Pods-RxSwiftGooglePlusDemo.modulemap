@@ -1,0 +1,6 @@
+framework module Pods_RxSwiftGooglePlusDemo {
+  umbrella header "Pods-RxSwiftGooglePlusDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
