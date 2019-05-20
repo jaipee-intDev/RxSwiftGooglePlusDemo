@@ -11,27 +11,15 @@ open podfile
 paste pods in your podfile
 
 --------------------------------------------------------------------------
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
 
-target 'Your Project Name' do
+target 'ProjectName' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Your Project Name
+  # Pods for ProjectName
    pod 'RxSwift'
    pod 'RxCocoa'
    pod 'GoogleSignIn'
-
-  target 'YourProject NameTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'YourProject NameUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
 end
 -------------------------------------------------------------------------------
@@ -39,6 +27,29 @@ end
 install pod in project with
 pod install
 
+
+for creating an OAuth client ID refer this url
+https://developers.google.com/identity/sign-in/ios/start-integrating
+
+create project and get client ID & download and save credential.plist and drag and drop in xcode project.
+
+paste client ID in GPServices.Swift file 
+
+```
+private struct GPCredentials {
+    //static let shared = GPCredentials()
+    private static let clientId = "put your clientId here."
+    
+    static func getClientId()-> String {
+        return self.clientId
+    }
+}
+```
+
+then open credentials.plist and copy REVERSED CLIENT ID like :- com.googleusercontent.apps.67xxxxx14xx-hj2jgqhucxxxxxxxxxjaad1tobxxxxxx
+
+and open target click on info tab and add new URL Types and past this reverse client ID in URL Schemes text field in it.
+for refrence see this page https://developers.google.com/identity/sign-in/ios/start-integrating
 
 & run the project.
 
