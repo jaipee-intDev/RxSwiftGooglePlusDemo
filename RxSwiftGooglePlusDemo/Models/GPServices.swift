@@ -25,7 +25,7 @@ struct GPServices {
 
 private struct GPCredentials {
     //static let shared = GPCredentials()
-    private static let clientId = "675275621409-hj2jgqhuc8f08nvq3mjaad1tob39f3nb.apps.googleusercontent.com"
+    private static let clientId = "put your clientId here."
     
     static func getClientId()-> String {
         return self.clientId
