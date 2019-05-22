@@ -42,16 +42,18 @@ paste client ID in GPServices.Swift file
 
 ```
 private struct GPCredentials {
-    //static let shared = GPCredentials()
+
     private static let clientId = "put your clientId here."
-    
     static func getClientId()-> String {
         return self.clientId
     }
 }
 ```
 
-then open credentials.plist and copy REVERSED CLIENT ID like :- com.googleusercontent.apps.67xxxxx14xx-hj2jgqhucxxxxxxxxxjaad1tobxxxxxx
+then open credentials.plist and copy REVERSED CLIENT ID like :
+```
+com.googleusercontent.apps.67xxxxx14xx-hj2jgqhucxxxxxxxxxjaad1tobxxxxxx
+```
 
 and open target click on info tab and add new URL Types and past this reverse client ID in URL Schemes text field in it.
 for refrence see this page https://developers.google.com/identity/sign-in/ios/start-integrating
