@@ -11,17 +11,16 @@ open podfile
 paste pods in your podfile
 
 --------------------------------------------------------------------------
-
+```
 target 'ProjectName' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for ProjectName
    pod 'RxSwift'
    pod 'RxCocoa'
    pod 'GoogleSignIn'
 
 end
+```
 -------------------------------------------------------------------------------
 
 install pod in project with
