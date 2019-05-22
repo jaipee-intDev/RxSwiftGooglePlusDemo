@@ -2,11 +2,15 @@
 After creat your project open your project path on terminal and run below mentioned these commands.
 Set up your CocoaPods dependencies
 
-to make a podfile
+to make a podfile with command:
+```
 pod init
+```
 
-open your podfile
+open your podfile with command:
+```
 open podfile
+```
 
 paste pods in your podfile
 
@@ -23,8 +27,10 @@ end
 ```
 -------------------------------------------------------------------------------
 
-install pod in project with
+install pod in project with command
+```
 pod install
+```
 
 
 for creating an OAuth client ID refer this url
